@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T10:05:31Z",
+  "title": "Design System: Ansh Sharma Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "primary-pine": {"role":"primary","displayName":"Muted Pine","canonical":"#315b49","tonalRamp":["#000f08","#12271e","#2a4036","#455b51","#60786d","#7e968a","#a5beb2","#d2ecdf"]},
+      "deep-pine": {"role":"primary","displayName":"Deep Pine","canonical":"#203e32","tonalRamp":["#000f08","#12271e","#2a4037","#455b51","#60786d","#7e968b","#a5beb3","#d2ece0"]},
+      "brass": {"role":"secondary","displayName":"Aged Brass","canonical":"#80652d","tonalRamp":["#110a00","#292010","#423928","#5d5442","#7a705e","#988e7a","#c1b6a2","#eee3ce"]},
+      "ink": {"role":"neutral","displayName":"Deep Ink","canonical":"#1c2923","tonalRamp":["#040e09","#18251f","#313e38","#4b5952","#67766e","#84938c","#acbcb4","#d8e9e1"]},
+      "muted-ink": {"role":"neutral","displayName":"Muted Ink","canonical":"#536158","tonalRamp":["#040e08","#19251d","#313e36","#4b5950","#67766c","#85948a","#acbcb2","#d9e9df"]},
+      "quiet-ink": {"role":"neutral","displayName":"Quiet Ink","canonical":"#69766d","tonalRamp":["#050e08","#1a251d","#323e36","#4c5950","#68756c","#86938a","#adbcb2","#dae9df"]},
+      "paper": {"role":"neutral","displayName":"Warm Paper","canonical":"#f4f2ea","tonalRamp":["#0d0b06","#23221c","#3c3b34","#57554f","#73726b","#918f88","#b9b7b0","#e7e5dd"]},
+      "raised-paper": {"role":"neutral","displayName":"Raised Paper","canonical":"#fbfaf6","tonalRamp":["#0c0b09","#22221f","#3b3a37","#565552","#72716e","#908f8b","#b8b7b4","#e5e4e1"]},
+      "soft-paper": {"role":"neutral","displayName":"Soft Paper","canonical":"#eaece4","tonalRamp":["#0b0c07","#21221d","#3a3b35","#55564f","#71726b","#8e9089","#b6b8b1","#e4e6de"]},
+      "rule": {"role":"neutral","displayName":"Paper Rule","canonical":"#d7dbd1","tonalRamp":["#0a0c06","#20231b","#393c34","#53574e","#70736a","#8d9187","#b5b9af","#e2e6dc"]},
+      "strong-rule": {"role":"neutral","displayName":"Strong Paper Rule","canonical":"#bac3b8","tonalRamp":["#070d06","#1d241c","#363d34","#50584e","#6c746a","#8a9288","#b1baaf","#dee8dc"]},
+      "native-block": {"role":"primary","displayName":"Native Integration Block","canonical":"#34443c","tonalRamp":["#030e08","#16251e","#2f3f37","#495a51","#65766d","#82948b","#aabdb3","#d7eae0"]},
+      "brass-block": {"role":"secondary","displayName":"Brass Data Block","canonical":"#d7c99d","tonalRamp":["#100b00","#27210f","#403a27","#5b5541","#78715d","#968f7a","#beb7a1","#ece5cd"]},
+      "white": {"role":"neutral","displayName":"White Text","canonical":"#ffffff","tonalRamp":["#0b0b0b","#222222","#3a3a3a","#555555","#717171","#8f8f8f","#b7b7b7","#e4e4e4"]}
+    },
+    "typographyMeta": {
+      "display": {"displayName":"Hero display","purpose":"The name in the first viewport."},
+      "headline": {"displayName":"Section headline","purpose":"Experience, work, stack, and education section titles."},
+      "title": {"displayName":"Project and role title","purpose":"Project names and experience headings."},
+      "body": {"displayName":"Reading copy","purpose":"Hero summary and project evidence."},
+      "label": {"displayName":"Technical label","purpose":"Dates, categories, technologies, résumé notes, and measured facts."}
+    },
+    "shadows": [],
+    "motion": [
+      {"name":"ease-build","value":"cubic-bezier(.2,.75,.2,1)","purpose":"Moves map nodes and material markers together on viewport entry and apart on exit."},
+      {"name":"node-settle","value":"transform .85s cubic-bezier(.2,.75,.2,1), opacity .5s","purpose":"Assembles the four map blocks while preserving their text."},
+      {"name":"marker-settle","value":"transform .7s cubic-bezier(.2,.75,.2,1), opacity .4s","purpose":"Moves small markers on work and project surfaces."}
+    ],
+    "breakpoints": [
+      {"name":"narrow","value":"390px"},
+      {"name":"stacked","value":"760px"},
+      {"name":"tablet","value":"980px"}
+    ]
+  },
+  "components": [
+    {
+      "name":"Primary Button",
+      "kind":"button",
+      "refersTo":"button-primary",
+      "description":"Solid pine action that moves visitors into selected work.",
+      "html":"<a class=\"ds-button-primary\" href=\"#projects\">View selected work</a>",
+      "css":".ds-button-primary { display:inline-flex; min-height:46px; align-items:center; justify-content:center; padding:0 17px; border:1px solid var(--pine); background:var(--pine); color:#fff; font:700 12px Manrope, sans-serif; text-decoration:none; transition:transform .2s cubic-bezier(.2,.75,.2,1), background .2s, border-color .2s; } .ds-button-primary:hover { transform:translateY(-2px); border-color:var(--pine-dark); background:var(--pine-dark); } .ds-button-primary:focus-visible { outline:2px solid var(--brass); outline-offset:4px; }"
+    },
+    {
+      "name":"Text Action",
+      "kind":"button",
+      "description":"Unfilled contact action paired with the primary CTA.",
+      "html":"<a class=\"ds-button-text\" href=\"mailto:hello@example.com\">Get in touch</a>",
+      "css":".ds-button-text { display:inline-flex; min-height:40px; align-items:center; color:var(--ink); font:700 12px Manrope, sans-serif; text-decoration:none; } .ds-button-text:hover { color:var(--pine); } .ds-button-text:focus-visible { outline:2px solid var(--brass); outline-offset:4px; }"
+    },
+    {
+      "name":"Sticky Navigation",
+      "kind":"nav",
+      "description":"Square, paper-backed navigation with a subtle bottom rule.",
+      "html":"<nav class=\"ds-nav\" aria-label=\"Primary navigation\"><a href=\"#work\">Experience</a><a href=\"#projects\">Projects</a><a href=\"#stack\">Stack</a></nav>",
+      "css":".ds-nav { position:sticky; top:0; display:flex; height:76px; align-items:center; gap:24px; padding:0 24px; border-bottom:1px solid var(--line); background:var(--paper); } .ds-nav a { color:var(--muted); font:12px Manrope, sans-serif; text-decoration:none; } .ds-nav a:hover { color:var(--pine); } .ds-nav a:focus-visible { outline:2px solid var(--brass); outline-offset:4px; }"
+    },
+    {
+      "name":"Technology Tag",
+      "kind":"chip",
+      "refersTo":"project-tag",
+      "description":"Compact filled label for a technology in a project stack.",
+      "html":"<span class=\"ds-tag\">Spring Boot</span>",
+      "css":".ds-tag { display:inline-block; padding:4px 7px; background:var(--paper-soft); color:var(--pine); font:8px/1.45 'DM Mono', Consolas, monospace; }"
+    },
+    {
+      "name":"Project Surface",
+      "kind":"card",
+      "description":"Flat raised-paper project cell separated by a shared grid rule.",
+      "html":"<article class=\"ds-project\"><span class=\"ds-project-status\">Production platform</span><h3>PalmVein Verification</h3><p>A palm-vein enrollment and verification pipeline spanning native hardware, desktop capture, and backend matching.</p></article>",
+      "css":".ds-project { display:flex; min-height:300px; flex-direction:column; padding:25px 27px 23px; background:var(--paper-raised); color:var(--ink); } .ds-project-status { align-self:flex-end; padding:4px 7px; border:1px solid var(--line-strong); color:var(--pine); font:8px 'DM Mono', Consolas, monospace; } .ds-project h3 { margin:24px 0 12px; font:700 24px/1.1 Manrope, sans-serif; letter-spacing:-.05em; } .ds-project p { max-width:65ch; color:var(--muted); font:11px/1.65 Manrope, sans-serif; }"
+    },
+    {
+      "name":"Engineering System Map",
+      "kind":"custom",
+      "description":"Four solid technology blocks show the portfolio's Android, services, native, and data layers.",
+      "html":"<figure class=\"ds-map\" data-state=\"assembled\"><figcaption>ENGINEERING SYSTEMS</figcaption><div class=\"ds-map-canvas\"><svg viewBox=\"0 0 600 430\" aria-hidden=\"true\"><path d=\"M228 105H370M228 325H370M145 140V290M455 140V290M228 105H300V325H370\" /></svg><div class=\"ds-node ds-node-mobile\"><b>Android</b><small>Kotlin · Compose</small></div><div class=\"ds-node ds-node-services\"><b>Spring Boot</b><small>APIs · security</small></div><div class=\"ds-node ds-node-native\"><b>Native systems</b><small>C · JNA · Electron</small></div><div class=\"ds-node ds-node-data\"><b>PostgreSQL</b><small>PostGIS · Redis</small></div></div></figure>",
+      "css":".ds-map { padding:16px; border:1px solid var(--line-strong); background:var(--paper-raised); color:var(--ink); } .ds-map figcaption { padding-bottom:14px; color:var(--muted); font:9px 'DM Mono', Consolas, monospace; letter-spacing:.05em; } .ds-map-canvas { position:relative; display:grid; min-height:360px; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:18%; align-items:center; padding:8%; border:1px solid var(--line); background:var(--paper); } .ds-map-canvas svg { position:absolute; inset:0; width:100%; height:100%; } .ds-map-canvas path { fill:none; stroke:var(--line-strong); stroke-width:1.5; } .ds-node { z-index:1; display:flex; min-height:84px; flex-direction:column; justify-content:center; padding:10px; font:700 13px Manrope, sans-serif; transition:transform .85s cubic-bezier(.2,.75,.2,1); } .ds-node small { margin-top:4px; font:9px Manrope, sans-serif; } .ds-node-mobile { background:var(--pine); color:#fff; } .ds-node-services { background:var(--soft-paper); color:var(--ink); } .ds-node-native { background:var(--native-block); color:#fff; } .ds-node-data { background:var(--brass-block); color:#2c2c20; } .ds-map[data-state=\"breaking\"] .ds-node-mobile { transform:translate(-10px,-12px); } .ds-map[data-state=\"breaking\"] .ds-node-services { transform:translate(10px,-12px); } .ds-map[data-state=\"breaking\"] .ds-node-native { transform:translate(-10px,12px); } .ds-map[data-state=\"breaking\"] .ds-node-data { transform:translate(10px,12px); } @media (prefers-reduced-motion:reduce) { .ds-node { transform:none !important; transition:none !important; } }"
+    }
+  ],
+  "narrative": {
+    "northStar":"The System Ledger",
+    "overview":"The portfolio treats engineering as a connected set of decisions. Warm paper and deep ink keep the reading experience calm, while the hero's four-part flow map makes the Android, Spring Boot, native integration, and data layers visible at a glance. Project details and evidence stay in the foreground; the diagram frames the work instead of impersonating a person or product screenshot. The page uses solid fields, thin rules, and compact technical labels to give the work an editorial structure. The map and small material markers assemble and separate as visitors scroll. Every text block stays readable in each state, and reduced-motion preferences leave the geometry stable.",
+    "keyCharacteristics":["Warm paper surfaces, deep ink, muted pine, and brass.","Manrope for reading and DM Mono for dates, categories, technologies, and measured facts.","A labeled architecture map in the first viewport in place of portrait or avatar artwork.","Flat panels, square material blocks, thin rules, and restrained scroll motion."],
+    "rules":[
+      {"name":"The Solid Fields Rule","body":"Separate information with solid color fields and thin rules; avoid neon, gradients, and decorative blur.","section":"colors"},
+      {"name":"The Measured Label Rule","body":"Use monospace for code, dates, categories, technologies, and measurements; use Manrope for prose and headings.","section":"typography"},
+      {"name":"The Flat Surface Rule","body":"Use tonal surfaces and borders for separation; do not add ornamental shadows or blur to panels.","section":"elevation"},
+      {"name":"The Assembly Rule","body":"Move map geometry and small section markers only; keep all copy visible, and hold the map still when reduced motion is preferred.","section":"components"}
+    ],
+    "dos":["Do use the paper, ink, pine, and brass roles from the frontmatter for new surfaces.","Do use Manrope for reading and DM Mono only for technical labels and measured context.","Do keep the system map factual and the text readable while its parts move.","Do honor reduced-motion preferences with a stable arrangement."],
+    "donts":["Don't add a portrait or avatar graphic; the user chose an engineering diagram instead.","Don't use neon colors, gradients, or decorative blur.","Don't use rounded cards or ornamental shadows; the page's surfaces are flat and square."]
+  }
+}
